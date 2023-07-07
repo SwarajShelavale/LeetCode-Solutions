@@ -48,7 +48,7 @@ class Solution
         // your code here
         int pivot = arr[high];
         int i=low;
-        for(int j=low+1;j<high;j++)
+        for(int j=low;j<high;j++)
         {
             if(arr[j]<pivot)
             {
@@ -58,13 +58,11 @@ class Solution
                 i++;
             }
         }
+        
         int temp = arr[i];
         arr[i]=pivot;
         arr[high]=temp;
+        
         return i;
     } 
 }
-
-// // 4 1 3 9 7
-//   i       p
-//     j
