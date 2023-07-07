@@ -28,10 +28,10 @@ class GFG{
 class Solution{
     static int isValid(int board[][]){
        Set<String> s = new HashSet<>();
-        int n =board.length, m = board[0].length;
+        int n =board.length;
         for(int i=0;i<n;i++)
         {
-            for(int j=0;j<m;j++)
+            for(int j=0;j<n;j++)
             {
                 if(board[i][j]!=0) 
                 {
